@@ -1,5 +1,6 @@
 body {
     background-image: url("../images/bg.png");
+    font-family: "Labrada", sans-serif;
 }
 
 header {
@@ -18,14 +19,36 @@ h1, .menu-title {
     color: #E54612;
 }
 
+h1 {
+    text-shadow: 2px 2px 2px #FED303;
+    font-size: 4rem;
+}
+
 nav {
     margin: 0 auto;
+}
+
+.navbar {
+    border: none;
+}
+
+.menu-btn {
+    font-family: "Bangers", sans-serif;
+    color: white;
+    background-color: #E54612;
+}
+
+.menu-btn:hover {
+    color: #E54612;
+    background-color: white;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.474);
 }
 
 .menu-title {
     font-size: 1.5rem;
     margin-bottom: 0;
     letter-spacing: 0.3rem;
+    margin-bottom: 1rem;
 }
 
 .order {
@@ -47,4 +70,8 @@ nav {
 
 .card-container img {
     background-color: #FED303;
+}
+
+.card-container p {
+    font-weight: 600;
 }
