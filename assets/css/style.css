@@ -1,0 +1,50 @@
+body {
+    background-image: url("../images/bg.png");
+}
+
+header {
+    margin: 3rem auto;
+}
+
+main {
+    margin-bottom: 5rem;
+}
+
+h1, .menu-title {
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Bangers", sans-serif;
+    color: #E54612;
+}
+
+nav {
+    margin: 0 auto;
+}
+
+.menu-title {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    letter-spacing: 0.3rem;
+}
+
+.order {
+    background-color: #E54612;
+    border: none;
+    width: 100%;
+    font-family: "Bangers", sans-serif;
+}
+
+.order:hover {
+    background-color: #FED303;
+    color: #E54612;
+    transition: 0.3s ease;
+}
+
+.card-container {
+    padding: 0.3rem;
+}
+
+.card-container img {
+    background-color: #FED303;
+}
