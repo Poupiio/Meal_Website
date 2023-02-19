@@ -75,3 +75,11 @@ nav {
 .card-container p {
     font-weight: 600;
 }
+
+.card-container .price {
+    background-color: #E54612;
+    font-size: 2rem;
+    width: 30%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
