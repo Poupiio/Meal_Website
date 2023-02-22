@@ -24,6 +24,23 @@ h1 {
     font-size: 4rem;
 }
 
+i {
+    padding: 0 3rem;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/* ************************************************************************************************************************************ */
+/*                                                      WEBSITE PAGE                                                                    */
+/* ************************************************************************************************************************************ */
+header .title-img {
+    color: #FED303;
+    text-shadow: 2px 2px 2px #E54612;
+}
+
 nav {
     margin: 0 auto;
 }
@@ -61,7 +78,6 @@ nav {
 .order:hover {
     background-color: #FED303;
     color: #E54612;
-    transition: 0.3s ease;
 }
 
 .card-container {
@@ -82,4 +98,40 @@ nav {
     width: 30%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+
+
+
+
+
+/* ************************************************************************************************************************************ */
+/*                                                      ADMIN PAGE                                                                      */
+/* ************************************************************************************************************************************ */
+
+main .admin {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 70%;
+}
+
+main .admin i {
+    padding: 0 0.5rem 0 0;
+}
+
+main .admin .add-btn {
+    text-transform: uppercase;
+}
+
+main .admin .add-btn:hover {
+    color: #FED303;
+}
+
+table .actions:not(:last-child) {
+    margin-right: 1rem;
+}
+
+table .actions:hover {
+    opacity: 0.8;
 }
