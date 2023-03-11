@@ -143,6 +143,7 @@ const displayAllInfos = async () => {
             row.append(itemName);
 
             const description = document.createElement('td');
+            description.classList.add('des');
             description.textContent = data.description;
             row.append(description);
 
@@ -157,33 +158,48 @@ const displayAllInfos = async () => {
             const actions = document.createElement('td');
             row.append(actions);
 
-            // const see = document.createElement('a');
-            // see.setAttribute('href', 'assets/js/get.js');
-            // see.classList.add('btn', 'btn-secondary', 'actions');
-
-            // const f1 = document.createElement('i');
-            // f1.classList.add('fa-solid', 'fa-eye');
-            // f1.textContent = "Voir";
-            // f1.appendChild(see);
-            // row.append(see);
-
-            // Créer un élément d'ancrage
-            const watch = document.createElement('a');
-
-            // Définir l'emplacement de l'ancrage
-            watch.href = '#';
+            //  Bouton "Voir"
+            // Créer une balise <a>
+            const first = document.createElement('a');
+            first.classList.add('btn', 'btn-secondary', 'actions');
+            first.href = 'assets/js/get.js';
+            first.textContent = 'Voir ';
 
             // Créer un élément <i> pour le contenu
-            const icon = document.createElement('i');
-            icon.classList.add('fa-solid', 'fa-eye');
-            icon.innerHTML = 'Voir';
+            const eye = document.createElement('i');
+            eye.classList.add('fa-solid', 'fa-eye');
+            
+            // Ajouter l'élément <i> comme enfant de <a>
+            first.appendChild(eye);
 
+            // Bouton "Modifier"
+            const second = document.createElement('a');
+            second.classList.add('btn', 'btn-primary', 'actions');
+            second.href = 'assets/js/update.js';
+            second.textContent = 'Modifier ';
+
+            // Créer un élément <i> pour le contenu
+            const pen = document.createElement('i');
+            pen.classList.add('fa-solid', 'fa-square-pen');
+            
             // Ajouter l'élément <i> comme enfant de l'élément d'ancrage
-            watch.appendChild(icon);
+            second.appendChild(pen);
+
+            // Bouton "Supprimer"
+            const third = document.createElement('a');
+            third.classList.add('btn', 'btn-danger', 'actions');
+            third.href = 'assets/js/delete.js';
+            third.textContent = 'Supprimer ';
+
+            // Créer un élément <i> pour le contenu
+            const trash = document.createElement('i');
+            trash.classList.add('fa-solid', 'fa-trash');
+            
+            // Ajouter l'élément <i> comme enfant de l'élément d'ancrage
+            third.appendChild(trash);
 
             // Ajouter l'élément d'ancrage au document
-            row.appendChild(watch);
-
+            actions.append(first, second, third);
         };
         // Crée une nouvelle ligne pour chaque item
         createRow();

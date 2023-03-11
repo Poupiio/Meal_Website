@@ -41,6 +41,8 @@ header .title-img {
     text-shadow: 2px 2px 2px #E54612;
 }
 
+/* NAV BAR */
+
 nav {
     margin: 0 auto;
 }
@@ -61,6 +63,9 @@ nav {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.474);
 }
 
+
+
+/* MAIN */
 .menu-title {
     font-size: 1.5rem;
     margin-bottom: 0;
@@ -118,6 +123,9 @@ main .admin {
     padding: 2rem;
     border-radius: 10px;
     width: 70%;
+}
+main .admin .des {
+    width: 35%;
 }
 
 main .admin i {
