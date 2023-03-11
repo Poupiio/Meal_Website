@@ -100,6 +100,10 @@ nav {
     border-bottom-right-radius: 10px;
 }
 
+.card-container .footCard {
+    border-top: none;
+}
+
 
 
 
