@@ -15,7 +15,7 @@ const displayAllInfos = async () => {
     datas.map((data) => {
         // Je viens recréer la structure HTML du tableau pour insérer les données de la BDD dynamiquement
 
-//         // Création d'une ligne => je crée une fonction pour ça
+        // Création d'une ligne => je crée une fonction pour ça
         const createRow = () => {
             const tbody = document.querySelector('.db-content');
             const row = document.createElement('tr');
